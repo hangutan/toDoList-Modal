@@ -1,0 +1,159 @@
+.content{
+  z-index: 1;
+}
+.header{
+  background-color: #ddd;
+  position: relative;
+  height: 8vh;
+  width: 100%;
+  float: right;
+  color: black;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 0 0 white;
+}
+.btn-dehaze{
+  color: black;
+  margin-left: 220px;
+  font-size: 1.4rem;
+  min-height: 8vh;
+}
+.sidebar{
+  box-shadow: 2px 0 0 0 #ddd;
+  border-right:1px solid gray;
+  padding-top: 8vh;
+  float: left;
+  position: absolute;
+  height: 100%;
+  width: 200px;
+  background-color: black;
+}
+.nav{
+  padding-left: 10px!important;
+  border-bottom: 1px solid gray;
+  color: white;
+  font-size: 1rem;
+  padding: 15px 0 15px 10px;
+}
+.todolist{
+  border-top: 1px solid gray;
+}
+
+
+.content{
+  width: 70vw;
+  left: 51%;
+  transform: translate(-40%,0%);
+  position: absolute;
+  top: 13vh;
+}
+.table_list{
+  text-align: center;
+  margin-top: 5vh;
+}
+.search-name{
+  float: left;
+  margin-top: 10px!important;
+  width: 70%!important;
+  margin-right: 3px!important;
+}
+.btn-open{
+  width: 100%;
+  text-align: center;
+}
+.cancel-form{
+  margin-right: 5px;
+}
+.btn-search{
+  margin-top: 10px!important;
+}
+.btn-edit{
+  margin-right: 5px;
+}
+.form-list{
+  margin: 25px 20px!important;
+  
+}
+.input-name{
+  width: 100%!important;
+  margin-bottom: 10px;
+}
+.input-level{
+  margin-bottom: 10px;
+  width: 100%!important;
+}
+
+
+
+.hnt-modal-wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: sans-serif;
+  opacity: 0;
+  visibility: hidden;  
+  z-index: 2;
+}
+.hnt-modal-wrapper.show{
+  opacity: 1;
+  visibility: visible;
+}
+.hnt-mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.7);
+}
+.hnt-modal-content{
+  width: 500px;
+  background-color: #fff;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transform: translate(-50%, 0) scale(1.2);
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  z-index: 2;
+}
+.hnt-modal-open .hnt-modal-content{
+  opacity: 1;
+  transform: translate(-50%, 0) scale(1);
+}
+.hnt-modal-header{
+  position: relative;
+  padding: 15px 20px 10px 20px;
+  border-bottom: 1px solid #ccc;
+}
+.hnt-modal-footer {
+  padding: 10px 20px;
+  border-top: 1px solid #ccc;
+  text-align: right;
+}
+
+.hnt-modal-close {
+  width: 7%;
+  height: 100%;
+  padding-right: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  color: red;
+  cursor: pointer;
+}
+body.hnt-modal-open {
+  overflow: hidden;
+}
+.hnt-dialog {
+  position: relative;
+}
